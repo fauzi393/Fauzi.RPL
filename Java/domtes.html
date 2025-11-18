@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Scoring</title>
+</head>
+<body>
+    <h2>Sistem Scoring</h2>
+    <div>
+        <label>Point 1:</label>
+        <input type="number" id="point1"><br><br>
+    </div>
+    <div>
+        <label>Point 2:</label>
+        <input type="number" id="point2"><br><br>
+    </div>
+    <div>
+        <label>Point 3:</label>
+        <input type="number" id="point3"><br><br>
+    </div>
+    <button onclick="n()">Cari Skor</button>
+
+    <script>
+        function n() {
+            let p1 = Number(document.getElementById('point1').value);
+            let p2 = Number(document.getElementById('point2').value);
+            let p3 = Number(document.getElementById('point3').value);
+            document.write("hasil " + Math.max(p1, p2, p3));
+            document.write("<br> hasil " + Math.min(p1, p2, p3));
+        }
+    </script>
+</body>
+</html>

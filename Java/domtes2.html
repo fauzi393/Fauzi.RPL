@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>sistem scoring</h2>
+    <div>
+        <label for="">Point1</label>
+        <Input type="number" id="Point1">
+    </div>
+    <div>
+        <label for="">Point2</label>
+        <input type="number" id="Point2">
+    </div>
+    <div>
+        <label for="">Point3</label>
+        <input type="number" id="Point3">
+    </div>
+    <br>
+    <button onclick="n()">Cek</button>
+    <h3>Hasil:</h3>
+    <p id="r"></p>
+    <script>
+        function n() {
+            let p1 = Number(document.getElementById('Point1').value);
+            let p2 = Number(document.getElementById('Point1').value);
+            let p3 = Number(document.getElementById('Point1').value);
+            let h = Math.max;
+            let l = Math.min(p1, p2, p3);
+            document.write("hasil" + Math.max)
+        }
+    </script>
+</body>
+</html>
